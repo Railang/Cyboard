@@ -22,7 +22,7 @@
 &kp LEFT_SHIFT  &ht_z LC(Z) 0               &ht_x LC(X) 0      &ht_c LC(C) 0               &ht_v LC(V) 0                &kp B                                                &kp N                     &kp M                     &kp COMMA                   &kp DOT                     &kp FSLH           &kp RSHFT
 &tog 5          &kp GRAVE                   &kp LEFT_ALT       &ht_left LC(LS(LEFT)) 0     &ht_right LC(LS(RIGHT)) 0                                                                                   &ht_up LC(LS(UP)) 0       &ht_down LC(LS(DOWN)) 0     &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &tog 1
                                                                                            &ht_del LS(DEL) 0            &ht_home LS(HOME) 0        &ht_end LS(END) 0         &ht_pgdn LC(PG_DN) 0      &ht_pgup LC(PG_UP) 0      &kp RIGHT_ALT
-                                                                                           &kp BACKSPACE                &kp LCTRL                  &ht_win LG(V) 0           &ht_win2 CAPS 0           &kp ENTER                 &kp SPACE
+                                                                                           &kp BACKSPACE                &ht_enterctrl LCTRL ENTER  &ht_win LG(V) 0           &ht_win2 CAPS 0           &kp ENTER                 &kp SPACE
             >;
         };
 
@@ -57,7 +57,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 6   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
@@ -93,13 +93,18 @@
     };
 };
 
-// right hand trackball configuration
-
-&trackball_peripheral_listener {
-    input-processors =
-        //     activate layer 3 within 500ms of the trackball moving,,,,
-        <&zip_temp_layer 3 500>;
-};
+        scroll_mouse_layer {
+            bindings = 
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
 
 //left hand trackball configuration
 
@@ -110,5 +115,19 @@
         // make this trackball output scrolling events by default instead of cursor movement,,,,,
         <&zip_xy_to_scroll_mapper>,
         // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,
+        <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+};
+
+// Right hand trackball configuration - conditional based on layer
+&trackball_peripheral_listener {
+    layers = <0 1 2 3 4 5>;  // Default behavior for most layers
+    input-processors = <&zip_temp_layer 3 500>;
+};
+
+&trackball_peripheral_listener {
+    layers = <6>;  // Scroll behavior when on layer 6 only
+    input-processors = 
+        <&zip_xy_scaler 1 3>,
+        <&zip_xy_to_scroll_mapper>,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
