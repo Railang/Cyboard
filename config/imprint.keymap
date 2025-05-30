@@ -1,6 +1,7 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors.dtsi>
+#include <custom_behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -30,8 +31,8 @@
 &kp ESC         &kp F1             &kp F2             &kp F3             &kp F4             &kp F5                     &kp F6         &kp F7        &kp F8          &kp F9            &kp F10            &kp F11
 &tog 2          &kp N1             &kp N2             &kp N3             &kp N4             &kp N5                     &kp N6         &kp N7        &kp N8          &kp N9            &kp N0             &kp MINUS
 &kp LCTRL       &kp Q              &kp W              &kp E              &kp R              &kp T                      &kp Y          &kp U         &kp I           &kp O             &kp P              &kp BSLH
-&kp TAB         &Ctrlhold LC(A) A  &kp S              &kp D              &kp F              &kp G                      &kp H          &kp J         &kp K           &kp L             &kp SEMI           &kp SQT
-&kp LEFT_SHIFT  &Ctrlhold LC(Z) Z  &Ctrlhold LC(X) X  &Ctrlhold LC(C) C  &Ctrlhold LC(V) V  &kp B                      &kp N          &kp M         &kp COMMA       &kp DOT           &kp FSLH           &kp RSHFT
+&kp TAB         &ht_a LC(A)        &kp S              &kp D              &kp F              &kp G                      &kp H          &kp J         &kp K           &kp L             &kp SEMI           &kp SQT
+&kp LEFT_SHIFT  &ht_z LC(Z)        &ht_x LC(X)        &ht_c LC(C)        &ht_v LC(V)        &kp B                      &kp N          &kp M         &kp COMMA       &kp DOT           &kp FSLH           &kp RSHFT
 &tog 5          &kp GRAVE          &kp LEFT_ALT       &kp LEFT_ARROW     &kp RIGHT_ARROW                                              &kp UP_ARROW  &kp DOWN_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &tog 1
                                                                          &kp DEL            &kp HOME   &kp END         &kp PAGE_DOWN  &kp PAGE_UP   &kp RIGHT_ALT
                                                                          &kp BACKSPACE      &kp LCTRL  &kp LEFT_GUI    &kp CAPS       &kp ENTER     &kp SPACE

@@ -1,0 +1,99 @@
+// custom_behaviors.dtsi
+/ {
+    behaviors {
+        // A key: Tap=A, Hold=Ctrl+A, Double=Ctrl+Shift+A, Triple=Alt+A
+        ht_a: hold_tap_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_A";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_a>;
+        };
+        
+        td_a: tap_dance_a {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp LC(LS(A))>, <&kp LA(A)>;
+        };
+
+        // Z key: Tap=Z, Hold=Ctrl+Z, Double=Ctrl+Shift+Z, Triple=Alt+Z
+        ht_z: hold_tap_z {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_Z";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_z>;
+        };
+        
+        td_z: tap_dance_z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp Z>, <&kp LC(LS(Z))>, <&kp LA(Z)>;
+        };
+
+        // X key: Tap=X, Hold=Ctrl+X, Double=Ctrl+Shift+X, Triple=Alt+X
+        ht_x: hold_tap_x {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_X";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_x>;
+        };
+        
+        td_x: tap_dance_x {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_X";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp X>, <&kp LC(LS(X))>, <&kp LA(X)>;
+        };
+
+        // C key: Tap=C, Hold=Ctrl+C, Double=Ctrl+Shift+C, Triple=Alt+C
+        ht_c: hold_tap_c {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_C";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_c>;
+        };
+        
+        td_c: tap_dance_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp C>, <&kp LC(LS(C))>, <&kp LA(C)>;
+        };
+
+        // V key: Tap=V, Hold=Ctrl+V, Double=Ctrl+Shift+V, Triple=Alt+V
+        ht_v: hold_tap_v {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_V";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_v>;
+        };
+        
+        td_v: tap_dance_v {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_V";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp LC(LS(V))>, <&kp LA(V)>;
+        };
+    };
+};
