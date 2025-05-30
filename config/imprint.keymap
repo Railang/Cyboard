@@ -10,19 +10,6 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
-    behaviors {
-        Ctrlhold: Ctrlhold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CTRLHOLD";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            hold-trigger-key-positions = <51 52 50 49 37>;
-            flavor = "tap-preferred";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
