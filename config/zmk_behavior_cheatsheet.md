@@ -4,11 +4,11 @@
 
 | Key   | Single Tap       | Hold                     | Double Tap                     | Triple Tap       |
 |-------|------------------|--------------------------|--------------------------------|------------------|
-| **A** | A                | Ctrl+A *(Select All)*    | Ctrl+Shift+A                   | Alt+A            |
-| **Z** | Z                | Ctrl+Z *(Undo)*          | Ctrl+Shift+Z *(Redo)*          | Alt+Z            |
-| **X** | X                | Ctrl+X *(Cut)*           | Ctrl+Shift+X                   | Alt+X            |
-| **C** | C                | Ctrl+C *(Copy)*          | Ctrl+Shift+C                   | Alt+C            |
-| **V** | V                | Ctrl+V *(Paste)*         | Ctrl+Shift+V *(Paste Special)* | Alt+V            |
+| **A** | A                | Ctrl+A *(Select All)*    | Ctrl+Shift+A                   | -----            |
+| **Z** | Z                | Ctrl+Z *(Undo)*          | Ctrl+Shift+Z *(Redo)*          | ------           |
+| **X** | X                | Ctrl+X *(Cut)*           | -------------                  | ------           |
+| **C** | C                | Ctrl+C *(Copy)*          | --------------                 | -----            |
+| **V** | V                | Ctrl+V *(Paste)*         | Ctrl+Shift+V *(Paste Special)* | -----            |
 
 ## Arrow Keys
 
