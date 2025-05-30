@@ -8,7 +8,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&td_a>;
         };
         
@@ -17,7 +17,7 @@
             label = "TAP_DANCE_A";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp LC(LS(A))>, <&kp LA(A)>;
+            bindings = <&kp A>, <&kp LC(LS(A))>;
         };
 
         // Z key: Tap=Z, Hold=Ctrl+Z, Double=Ctrl+Shift+Z, Triple=Alt+Z
@@ -27,7 +27,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&td_z>;
         };
         
@@ -36,7 +36,7 @@
             label = "TAP_DANCE_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp Z>, <&kp LC(LS(Z))>, <&kp LA(Z)>;
+            bindings = <&kp Z>, <&kp LC(LS(Z))>;
         };
 
         // X key: Tap=X, Hold=Ctrl+X, Double=Ctrl+Shift+X, Triple=Alt+X
@@ -46,7 +46,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&td_x>;
         };
         
@@ -55,7 +55,7 @@
             label = "TAP_DANCE_X";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp X>, <&kp LC(LS(X))>, <&kp LA(X)>;
+            bindings = <&kp X>;
         };
 
         // C key: Tap=C, Hold=Ctrl+C, Double=Ctrl+Shift+C, Triple=Alt+C
@@ -65,7 +65,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&td_c>;
         };
         
@@ -74,7 +74,7 @@
             label = "TAP_DANCE_C";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp C>, <&kp LC(LS(C))>, <&kp LA(C)>;
+            bindings = <&kp C>;
         };
 
         // V key: Tap=V, Hold=Ctrl+V, Double=Ctrl+Shift+V, Triple=Alt+V
@@ -84,7 +84,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&td_v>;
         };
         
@@ -93,7 +93,184 @@
             label = "TAP_DANCE_V";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp V>, <&kp LC(LS(V))>, <&kp LA(V)>;
+            bindings = <&kp V>, <&kp LC(LS(V))>;
+        };
+        
+        // LEFT ARROW: Tap=Left, Hold=Ctrl+Shift+Left, Double=Ctrl+Left, Triple=Alt+Left
+        ht_left: hold_tap_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_LEFT";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_left>;
+        };
+        
+        td_left: tap_dance_left {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_LEFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LEFT>, <&kp LC(LEFT)>, <&kp LA(LEFT)>;
+        };
+
+        // RIGHT ARROW: Tap=Right, Hold=Ctrl+Shift+Right, Double=Ctrl+Right, Triple=Alt+Right
+        ht_right: hold_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_RIGHT";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_right>;
+        };
+        
+        td_right: tap_dance_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_RIGHT";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp RIGHT>, <&kp LC(RIGHT)>, <&kp LA(RIGHT)>;
+        };
+
+        // UP ARROW: Tap=Up, Hold=Ctrl+Shift+Up, Double=Ctrl+Up, Triple=Alt+Up
+        ht_up: hold_tap_up {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_UP";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_up>;
+        };
+        
+        td_up: tap_dance_up {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_UP";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp UP>, <&kp LC(UP)>, <&kp LA(UP)>;
+        };
+
+        // DOWN ARROW: Tap=Down, Hold=Ctrl+Shift+Down, Double=Ctrl+Down, Triple=Alt+Down
+        ht_down: hold_tap_down {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_DOWN";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_down>;
+        };
+        
+        td_down: tap_dance_down {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_DOWN";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp DOWN>, <&kp LC(DOWN)>, <&kp LA(DOWN)>;
+        };
+
+        // HOME: Tap=Home, Hold=Shift+Home, Double=Ctrl+Home, Triple=Alt+Shift+Home
+        ht_home: hold_tap_home {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_HOME";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_home>;
+        };
+        
+        td_home: tap_dance_home {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_HOME";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp HOME>, <&kp LC(HOME)>, <&kp LA(LS(HOME))>;
+        };
+
+        // END: Tap=End, Hold=Shift+End, Double=Ctrl+End, Triple=Alt+Shift+End
+        ht_end: hold_tap_end {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_END";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_end>;
+        };
+        
+        td_end: tap_dance_end {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_END";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp END>, <&kp LC(END)>, <&kp LA(LS(END))>;
+        };
+
+        // DELETE: Tap=Del, Hold=Shift+Del
+        ht_del: hold_tap_del {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_DEL";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        // PAGE DOWN: Tap=PgDn, Hold=Ctrl+PgDn
+        ht_pgdn: hold_tap_pgdn {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_PGDN";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        // PAGE UP: Tap=PgUp, Hold=Ctrl+PgUp
+        ht_pgup: hold_tap_pgup {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_PGUP";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+
+        // WINDOWS: Tap=Win, Hold=Win+V, Double=Win+L
+        ht_win: hold_tap_win {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_WIN";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&td_win>;
+        };
+        
+        td_win: tap_dance_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_WIN";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LGUI>, <&kp LG(L)>;
+        };
+
+        // WINDOWS 2: Tap=Win, Hold=Caps
+        ht_win2: hold_tap_win2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_WIN2";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
     };
 };
