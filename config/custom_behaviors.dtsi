@@ -6,7 +6,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_A";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_a>;
@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_A";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp A>, <&kp LC(LS(A))>;
         };
 
@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_Z";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_z>;
@@ -35,7 +35,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_Z";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp Z>, <&kp LC(LS(Z))>;
         };
 
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_X";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_x>;
@@ -54,7 +54,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_X";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp X>;
         };
 
@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_C";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_c>;
@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_C";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp C>;
         };
 
@@ -82,7 +82,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_V";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_v>;
@@ -92,16 +92,16 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_V";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp V>, <&kp LC(LS(V))>;
         };
-
+        
         // LEFT ARROW: Tap=Left, Hold=Ctrl+Shift+Left, Double=Ctrl+Left, Triple=Alt+Left
         ht_left: hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LEFT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_left>;
@@ -111,7 +111,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LEFT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT>, <&kp LC(LEFT)>, <&kp LA(LEFT)>;
         };
 
@@ -120,7 +120,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_RIGHT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_right>;
@@ -130,7 +130,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RIGHT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp RIGHT>, <&kp LC(RIGHT)>, <&kp LA(RIGHT)>;
         };
 
@@ -139,7 +139,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_UP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_up>;
@@ -149,7 +149,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_UP";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp UP>, <&kp LC(UP)>, <&kp LA(UP)>;
         };
 
@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_DOWN";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_down>;
@@ -168,7 +168,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOWN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp DOWN>, <&kp LC(DOWN)>, <&kp LA(DOWN)>;
         };
 
@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_HOME";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_home>;
@@ -187,7 +187,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_HOME";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp HOME>, <&kp LC(HOME)>, <&kp LA(LS(HOME))>;
         };
 
@@ -196,7 +196,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_END";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_end>;
@@ -206,7 +206,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_END";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp END>, <&kp LC(END)>, <&kp LA(LS(END))>;
         };
 
@@ -215,7 +215,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_DEL";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -226,7 +226,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_PGDN";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -237,7 +237,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_PGUP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
@@ -248,7 +248,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_WIN";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_win>;
@@ -258,7 +258,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_WIN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LGUI>, <&kp LG(L)>;
         };
 
@@ -267,7 +267,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_WIN2";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
