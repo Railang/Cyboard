@@ -260,7 +260,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LGUI>, <&kp LG(L)>;
-        };  
+        };
         
         // WINDOWS 2: Tap=Win, Hold=Caps
         ht_win2: hold_tap_win2 {
@@ -275,13 +275,13 @@
 
         // EnterCtrl: Tap=Enter, Hold=Ctrl
         ht_enterctrl: hold_tap_enterctrl {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_TAP_ENTERCTRL";
-        #binding-cells = <2>;
-        tapping-term-ms = <300>;
-        quick-tap-ms = <0>;
-        flavor = "balanced";
-        bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_ENTERCTRL";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
     };
 };
