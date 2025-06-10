@@ -8,7 +8,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&td_a>;
         };
         
@@ -27,7 +27,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&td_z>;
         };
         
@@ -46,7 +46,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&td_x>;
         };
         
@@ -65,7 +65,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&td_c>;
         };
         
@@ -84,7 +84,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&td_v>;
         };
         
