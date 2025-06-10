@@ -6,7 +6,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_A";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&kp>, <&td_a>;
