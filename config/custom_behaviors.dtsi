@@ -218,7 +218,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LS(DEL)>, <&kp DEL>;
         };
 
         // PAGE DOWN: Tap=PgDn, Hold=Ctrl+PgDn
@@ -229,7 +229,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LC(PG_DN)>, <&kp PG_DN>;
         };
 
         // PAGE UP: Tap=PgUp, Hold=Ctrl+PgUp
@@ -240,7 +240,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LC(PG_UP)>, <&kp PG_UP>;
         };
 
         // WINDOWS: Tap=Win, Hold=Win+V, Double=Win+L
@@ -270,7 +270,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp CAPS>, <&kp LGUI>;
         };
 
         // EnterCtrl: Tap=Enter, Hold=Ctrl
@@ -281,7 +281,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LCTRL>, <&kp ENTER>;
         };
     };
 };
