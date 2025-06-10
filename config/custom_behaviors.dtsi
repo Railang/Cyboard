@@ -17,7 +17,7 @@
             label = "TAP_DANCE_A";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp A>, <&kp LC(LS(A))>;
+            bindings = <&kp A>;
         };
 
         // Z key: Tap=Z, Hold=Ctrl+Z, Double=Ctrl+Shift+Z, Triple=Alt+Z
@@ -36,7 +36,7 @@
             label = "TAP_DANCE_Z";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp Z>, <&kp LC(LS(Z))>;
+            bindings = <&kp Z>;
         };
 
         // X key: Tap=X, Hold=Ctrl+X, Double=Ctrl+Shift+X, Triple=Alt+X
@@ -93,7 +93,7 @@
             label = "TAP_DANCE_V";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp V>, <&kp LC(LS(V))>;
+            bindings = <&kp V>;
         };
         
         // LEFT ARROW: Tap=Left, Hold=Ctrl+Shift+Left, Double=Ctrl+Left, Triple=Alt+Left
