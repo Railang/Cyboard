@@ -218,7 +218,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp LS(DEL)>, <&kp DEL>;
+            bindings = <&kp>, <&td_del>;
+        };
+        
+        td_del: tap_dance_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_DEL";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp DEL>;
         };
 
         // PAGE DOWN: Tap=PgDn, Hold=Ctrl+PgDn
@@ -229,7 +237,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp LC(PG_DN)>, <&kp PG_DN>;
+            bindings = <&kp>, <&td_pgdn>;
+        };
+        
+        td_pgdn: tap_dance_pgdn {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PGDN";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp PG_DN>;
         };
 
         // PAGE UP: Tap=PgUp, Hold=Ctrl+PgUp
@@ -240,7 +256,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp LC(PG_UP)>, <&kp PG_UP>;
+            bindings = <&kp>, <&td_pgup>;
+        };
+        
+        td_pgup: tap_dance_pgup {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PGUP";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp PG_UP>;
         };
 
         // WINDOWS: Tap=Win, Hold=Win+V, Double=Win+L
@@ -270,7 +294,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp CAPS>, <&kp LGUI>;
+            bindings = <&kp>, <&td_win2>;
+        };
+        
+        td_win2: tap_dance_win2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_WIN2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LGUI>;
         };
 
         // EnterCtrl: Tap=Enter, Hold=Ctrl
@@ -281,7 +313,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp LCTRL>, <&kp ENTER>;
+            bindings = <&kp>, <&td_enterctrl>;
+        };
+        
+        td_enterctrl: tap_dance_enterctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ENTERCTRL";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp ENTER>;
         };
     };
 };
