@@ -327,7 +327,8 @@
         // Double-click macro
         double_click: double_click {
             compatible = "zmk,behavior-macro";
-            label = "DOUBLE_CLICK";
+            wait-ms = <20>;
+            tap-ms = <20>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &mkp LCLK>
@@ -338,7 +339,8 @@
         // Triple-click macro
         triple_click: triple_click {
             compatible = "zmk,behavior-macro";
-            label = "TRIPLE_CLICK";
+            wait-ms = <20>;
+            tap-ms = <20>
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &mkp LCLK>
