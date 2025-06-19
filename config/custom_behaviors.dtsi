@@ -330,7 +330,7 @@
             wait-ms = <20>;
             tap-ms = <20>;
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&mkp LCLK>, <&macro_tap>, <&mkp LCLK>;
+            bindings = <&mkp LCLK>, <&mkp LCLK>;
         };
 
         // Triple-click macro
@@ -339,7 +339,7 @@
             wait-ms = <20>;
             tap-ms = <20>;
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&mkp LCLK>, <&macro_tap>, <&mkp LCLK>, <&macro_tap>, <&mkp LCLK>;
+            bindings = <&mkp LCLK>, <&mkp LCLK>, <&mkp LCLK>;
         };
     };
 };
