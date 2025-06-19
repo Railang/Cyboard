@@ -54,14 +54,14 @@
 
         Auto_Mouse_Layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo 6   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 6   &mkp RCLK     &mkp MCLK     &mkp LCLK  &double_click            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans                              &trans  &trans  &trans  &trans  &trans
+                                            &triple_click     &trans  &trans    &trans  &trans  &trans
+                                            &trans            &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -80,27 +80,27 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans        &trans        &trans                            &trans  &trans  &trans  &trans  &trans
+                                            &trans  &trans  &trans    &trans  &trans  &trans
+                                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         scroll_mouse_layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &double_click          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
+                                      &triple_click   &trans  &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans         &trans  &trans  &trans
             >;
         };
     };
