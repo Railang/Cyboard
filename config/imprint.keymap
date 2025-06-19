@@ -10,6 +10,24 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
+    macros {
+        double_click: double_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &mkp LCLK &mkp LCLK>;
+        };
+
+        triple_click: triple_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings = <&macro_tap &mkp LCLK &mkp LCLK &mkp LCLK>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
