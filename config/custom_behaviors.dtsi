@@ -329,15 +329,15 @@
             compatible = "zmk,behavior-macro";
             label = "DOUBLE_CLICK";
             #binding-cells = <0>;
-            bindings = <&mkp LCLK>, <&macro_wait_time 10>, <&mkp LCLK>;
+            bindings = <&macro_tap>, <&mkp LCLK>, <&macro_pause_for_release>, <&macro_tap>, <&mkp LCLK>;
         };
 
         // Triple-click macro
         triple_click: triple_click {
             compatible = "zmk,behavior-macro";
-            label = "TRIPLE_CLICK";
+            label = "TRIPLE_CLICK";  
             #binding-cells = <0>;
-            bindings = <&mkp LCLK>, <&macro_wait_time 10>, <&mkp LCLK>, <&macro_wait_time 10>, <&mkp LCLK>;
+            bindings = <&macro_tap>, <&mkp LCLK>, <&macro_pause_for_release>, <&macro_tap>, <&mkp LCLK>, <&macro_pause_for_release>, <&macro_tap>, <&mkp LCLK>;
         };
     };
 };
