@@ -78,8 +78,8 @@
 &trans  &mo 6   &mkp RCLK     &mkp MCLK     &mkp LCLK  &double_click            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans                              &trans  &trans  &trans  &trans  &trans
-                                            &triple_click     &trans  &trans    &trans  &trans  &trans
                                             &trans            &trans  &trans    &trans  &trans  &trans
+                                            &triple_click     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -117,8 +117,8 @@
 &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &double_click          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &triple_click   &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans         &trans  &trans  &trans
+                                      &trans   &trans  &trans    &trans  &trans  &trans
+                                      &triple_click   &trans  &trans         &trans  &trans  &trans
             >;
         };
     };
