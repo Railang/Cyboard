@@ -10,7 +10,42 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
+    combos {
+        compatible = "zmk,combos";
+
+        // KW combo: Hold K+W simultaneously
+        combo_kw {
+            timeout-ms = <50>;
+            key-positions = <32 14>; // K=32, W=14
+            bindings = <&macro_kw>;
+            layers = <0>; // Only active on default layer
+        };
+        
+        // DT combo: Hold D+T simultaneously  
+        combo_dt {
+            timeout-ms = <50>;
+            key-positions = <27 17>; // D=27, T=17
+            bindings = <&macro_dt>;
+            layers = <0>; // Only active on default layer
+        };
+    };
+
     macros {
+        //Triggers from KW Combo
+        macro_kw: macro_kw {
+            compatible = "zmk,behavior-macro";
+            label = "KW_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp LS(W) &kp LS(D) &kp F &kp U &kp 9 &kp LS(S) &kp D &kp LS(Z) &kp Y &kp 1>;
+        };
+        //Triggers from DT Combo
+        macro_dt: macro_dt {
+            compatible = "zmk,behavior-macro";
+            label = "DT_MACRO";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp O &kp N &kp T &kp LS(T) &kp O &kp C &kp H &kp 1 &kp 2 &kp 1 &kp EXCL &kp AT_SIGN &kp EXCL>;
+        };
+
         double_click: double_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
