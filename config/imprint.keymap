@@ -15,7 +15,7 @@
 
         // KW combo: Hold K+W simultaneously
         combo_kw {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <44 26>; // K=44, W=26
             bindings = <&macro_kw>;
             layers = <0>; // Only active on default layer
@@ -23,7 +23,7 @@
         
         // DT combo: Hold D+T simultaneously  
         combo_dt {
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             key-positions = <39 29>; // D=39, T=29
             bindings = <&macro_dt>;
             layers = <0>; // Only active on default layer
