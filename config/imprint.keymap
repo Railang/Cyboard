@@ -117,7 +117,7 @@
 &trans  &mo 6   &double_click  &mkp LCLK  &mkp MCLK  &mkp RCLK            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans                              &trans  &trans  &trans  &trans  &trans
-                                            &triple_click            &trans  &trans    &trans  &trans  &trans
+                                            &triple_click            &mkp RCLK  &mkp LCLK    &trans  &trans  &trans
                                             &trans                   &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -150,14 +150,14 @@
 
         scroll_mouse_layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &double_click  &mkp LCLK  &mkp MCLK  &mkp RCLK         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &triple_click   &trans  &trans    &trans  &trans  &trans
-                                      &trans          &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &double_click  &mkp LCLK  &mkp MCLK  &mkp RCLK                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                                            &trans  &trans  &trans  &trans  &trans
+                                      &triple_click   &trans  &trans         &mkp RCLK  &mkp LCLK  &trans
+                                      &trans          &trans  &trans         &trans     &trans     &trans
             >;
         };
     };
