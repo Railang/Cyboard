@@ -114,11 +114,11 @@
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo 6   &double_click  &mkp LCLK  &mkp MCLK  &mkp RCLK            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 6   &double_click  &mkp RCLK  &mkp MCLK  &mkp LCLK            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans                              &trans  &trans  &trans  &trans  &trans
-                                            &triple_click            &mkp RCLK  &mkp LCLK    &trans  &trans  &trans
-                                            &trans                   &trans  &trans    &trans  &trans  &trans
+                                            &triple_click  &trans  &trans    &mkp LCLK  &mkp RCLK &trans
+                                            &trans         &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -153,10 +153,10 @@
 &trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &double_click  &mkp LCLK  &mkp MCLK  &mkp RCLK                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &double_click  &mkp RCLK  &mkp MCLK  &mkp LCLK                          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans                                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                                            &trans  &trans  &trans  &trans  &trans
-                                      &triple_click   &trans  &trans         &mkp RCLK  &mkp LCLK  &trans
+                                      &triple_click   &trans  &trans         &mkp LCLK  &mkp RCLK &trans
                                       &trans          &trans  &trans         &trans     &trans     &trans
             >;
         };
