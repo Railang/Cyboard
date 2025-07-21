@@ -38,7 +38,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;     // No delay between keypresses
             tap-ms = <5>;      // Hold each key for only 5ms
-            bindings = <&kp LS(K) &kp LS(W) &kp LS(D) &kp F &kp U &kp N9 &kp LS(S) &kp D &kp LS(Z) &kp Y &kp N1>;
+            bindings = <&kp K &kp LS(W) &kp LS(D) &kp LS(F) &kp U &kp N9 &kp LS(S) &kp D &kp LS(Z) &kp Y &kp N1>;
         };
         //Triggers from DT Combo
         macro_dt: macro_dt {
@@ -47,7 +47,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;     // No delay between keypresses
             tap-ms = <5>;      // Hold each key for only 5ms
-            bindings = <&kp LS(D) &kp O &kp N &kp T &kp LS(T) &kp O &kp U &kp C &kp H &kp N1 &kp N2 &kp N1 &kp EXCL &kp AT_SIGN &kp EXCL>;
+            bindings = <&kp LS(D) &kp O &kp N &kp T &kp T &kp O &kp U &kp C &kp H &kp N1 &kp N2 &kp N1 &kp EXCL &kp AT_SIGN &kp EXCL>;
         };
 
         double_click: double_click {
