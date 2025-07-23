@@ -49,6 +49,16 @@
             tap-ms = <5>;      // Hold each key for only 5ms
             bindings = <&kp LS(D) &kp O &kp N &kp T &kp T &kp O &kp U &kp C &kp H &kp N1 &kp N2 &kp N1 &kp EXCL &kp AT_SIGN &kp EXCL>;
         };
+        //Triggers from IA Combo
+        macro_dt: macro_dt {
+            compatible = "zmk,behavior-macro";
+            label = "DT_MACRO";
+            #binding-cells = <0>;
+            wait-ms = <0>;     // No delay between keypresses
+            tap-ms = <5>;      // Hold each key for only 5ms
+            bindings = <&kp I &kp A &kp N &kp DOT &kp N &kp E &kp I &kp L &kp AT_SIGN &kp A &kp L &kp I &kp A &kp N &kp Z &kp A &kp DOT &kp C &kp O &kp M>;
+        };
+
 
         double_click: double_click {
             compatible = "zmk,behavior-macro";
