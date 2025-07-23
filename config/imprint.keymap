@@ -16,12 +16,19 @@
         // KW combo: Hold K+W simultaneously
         combo_kw {
             timeout-ms = <50>;
-            key-positions = <44 26>; // K=44, W=26
-            bindings = <&macro_kw>;
+            key-positions = <32 37>; // I=32, A=37
+            bindings = <&macro_ia>;
             layers = <0>; // Only active on default layer
         };
         
         // DT combo: Hold D+T simultaneously  
+        combo_dt {
+            timeout-ms = <50>;
+            key-positions = <39 29>; // D=39, T=29
+            bindings = <&macro_dt>;
+            layers = <0>; // Only active on default layer
+        };
+        // IA combo: Hold D+T simultaneously  
         combo_dt {
             timeout-ms = <50>;
             key-positions = <39 29>; // D=39, T=29
@@ -50,9 +57,9 @@
             bindings = <&kp LS(D) &kp O &kp N &kp T &kp T &kp O &kp U &kp C &kp H &kp N1 &kp N2 &kp N1 &kp EXCL &kp AT_SIGN &kp EXCL>;
         };
         //Triggers from IA Combo
-        macro_dt: macro_dt {
+        macro_dt: macro_ia {
             compatible = "zmk,behavior-macro";
-            label = "DT_MACRO";
+            label = "IA_MACRO";
             #binding-cells = <0>;
             wait-ms = <0>;     // No delay between keypresses
             tap-ms = <5>;      // Hold each key for only 5ms
