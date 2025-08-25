@@ -323,5 +323,14 @@
             tapping-term-ms = <250>;
             bindings = <&kp ENTER>;
         };
+
+        // Doulbe Tap WinV
+        td_winv: tap_dance_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_WINV";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LGUI>, <&kp LG(V)>;
+        };
     };
 };
