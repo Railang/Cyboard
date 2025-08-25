@@ -324,8 +324,8 @@
             bindings = <&kp ENTER>;
         };
 
-        // Doulbe Tap WinV
-        td_winv: tap_dance_win {
+        // Double Tap WinV
+        td_winv: tap_dance_winv {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_WINV";
             #binding-cells = <0>;
