@@ -95,7 +95,7 @@
 &kp LEFT_SHIFT  &ht_z LC(Z) 0               &ht_x LC(X) 0      &ht_c LC(C) 0               &ht_v LC(V) 0                &kp B                                                &kp N                     &kp M                     &kp COMMA                   &kp DOT                     &kp FSLH           &kp RSHFT
 &tog 5          &kp GRAVE                   &kp LEFT_ALT       &ht_left LC(LS(LEFT)) 0     &ht_right LC(LS(RIGHT)) 0                                                                                   &ht_up LC(LS(UP)) 0       &ht_down LC(LS(DOWN)) 0     &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &tog 1
                                                                                            &ht_del LS(DEL) 0            &ht_home LS(HOME) 0        &ht_end LS(END) 0         &ht_pgdn LC(PG_DN) 0      &ht_pgup LC(PG_UP) 0      &kp RIGHT_ALT
-                                                                                           &kp BACKSPACE                &ht_enterctrl LCTRL ENTER  &ht_win LG(V) 0           &ht_win2 CAPS 0           &kp ENTER                 &kp SPACE
+                                                                                           &kp BACKSPACE                &ht_enterctrl LCTRL ENTER  td_winv 0           &ht_win2 CAPS 0           &kp ENTER                 &kp SPACE
             >;
         };
 
