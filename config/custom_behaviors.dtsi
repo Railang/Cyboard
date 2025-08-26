@@ -332,5 +332,16 @@
             tapping-term-ms = <250>;
             bindings = <&kp LGUI>, <&kp LG(V)>;
         };
+
+        // END key with Gesture Layer: Tap=End, Hold=Activate scroll gestures (layer 7)
+        ht_end_gesture: hold_tap_end_gesture {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_END_GESTURE";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 };

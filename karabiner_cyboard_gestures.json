@@ -1,0 +1,96 @@
+{
+  "title": "Cyboard End + Scroll = macOS Gestures",
+  "rules": [
+    {
+      "description": "End key modifier for scroll gestures",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "end"
+          },
+          "to_if_held_down": [
+            {
+              "key_code": "end",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "end"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 200,
+            "basic.to_if_held_down_threshold_milliseconds": 200
+          }
+        }
+      ]
+    },
+    {
+      "description": "End + Scroll → Control + Arrows",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": ["end"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": ["end"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "down_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": ["end"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": ["end"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": ["control"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
